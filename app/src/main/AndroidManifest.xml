@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NotePad">
+
+        <!-- 笔记列表：应用入口 -->
+        <activity
+            android:name=".NotesList"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 笔记编辑 / 新建 -->
+        <activity
+            android:name=".NoteEditor"
+            android:exported="false"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <!-- 偏好设置 -->
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+
+        <!-- 分类管理 -->
+        <activity
+            android:name=".CategoryActivity"
+            android:exported="false" />
+
+        <!-- 云备份与恢复 -->
+        <activity
+            android:name=".BackupActivity"
+            android:exported="false" />
+
+        <!-- 笔记数据提供者（基于原生 NotePad 的 ContentProvider 扩展） -->
+        <provider
+            android:name=".NotePadProvider"
+            android:authorities="com.example.android.notepad.provider"
+            android:exported="false" />
+    </application>
+
+</manifest>

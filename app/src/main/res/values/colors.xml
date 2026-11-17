@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ===================== 主题 1：紫罗兰（默认浅色） ===================== -->
+    <color name="t1_primary">#FF6C5CE7</color>
+    <color name="t1_on_primary">#FFFFFFFF</color>
+    <color name="t1_primary_container">#FFE8E3FF</color>
+    <color name="t1_on_primary_container">#FF2E216F</color>
+    <color name="t1_secondary">#FF00A896</color>
+    <color name="t1_on_secondary">#FFFFFFFF</color>
+    <color name="t1_secondary_container">#FFD3F3EE</color>
+    <color name="t1_on_secondary_container">#FF00443C</color>
+    <color name="t1_surface">#FFFFFFFF</color>
+    <color name="t1_surface_variant">#FFF3F1FA</color>
+    <color name="t1_background">#FFF7F6FC</color>
+    <color name="t1_on_surface">#FF1B1A22</color>
+    <color name="t1_on_surface_variant">#FF6B6A7A</color>
+    <color name="t1_outline">#FFE4E2EE</color>
+    <color name="t1_status_bar">#FFF7F6FC</color>
+
+    <!-- ===================== 主题 2：暗夜（深色） ===================== -->
+    <color name="t2_primary">#FFB4A6FF</color>
+    <color name="t2_on_primary">#FF241A5B</color>
+    <color name="t2_primary_container">#FF3A2C82</color>
+    <color name="t2_on_primary_container">#FFE5DEFF</color>
+    <color name="t2_secondary">#FF4DD0C4</color>
+    <color name="t2_on_secondary">#FF00322C</color>
+    <color name="t2_secondary_container">#FF1E4A45</color>
+    <color name="t2_on_secondary_container">#FFC9F5EE</color>
+    <color name="t2_surface">#FF1B1A21</color>
+    <color name="t2_surface_variant">#FF26252E</color>
+    <color name="t2_background">#FF131218</color>
+    <color name="t2_on_surface">#FFF1EFF7</color>
+    <color name="t2_on_surface_variant">#FFB1AEBD</color>
+    <color name="t2_outline">#FF3A3944</color>
+    <color name="t2_status_bar">#FF131218</color>
+
+    <!-- ===================== 主题 3：护眼绿 ===================== -->
+    <color name="t3_primary">#FF3F7D58</color>
+    <color name="t3_on_primary">#FFFFFFFF</color>
+    <color name="t3_primary_container">#FFD9EEDF</color>
+    <color name="t3_on_primary_container">#FF16301F</color>
+    <color name="t3_secondary">#FF6D9F7C</color>
+    <color name="t3_on_secondary">#FFFFFFFF</color>
+    <color name="t3_secondary_container">#FFE2F0E5</color>
+    <color name="t3_on_secondary_container">#FF1D3325</color>
+    <color name="t3_surface">#FFFAFCF8</color>
+    <color name="t3_surface_variant">#FFE8F0E5</color>
+    <color name="t3_background">#FFEFF5EC</color>
+    <color name="t3_on_surface">#FF1E2A22</color>
+    <color name="t3_on_surface_variant">#FF5B6B60</color>
+    <color name="t3_outline">#FFD4E1D2</color>
+    <color name="t3_status_bar">#FFEFF5EC</color>
+
+    <!-- ===================== 主题 4：海盐蓝 ===================== -->
+    <color name="t4_primary">#FF2B6CB0</color>
+    <color name="t4_on_primary">#FFFFFFFF</color>
+    <color name="t4_primary_container">#FFD5E6FA</color>
+    <color name="t4_on_primary_container">#FF0C3157</color>
+    <color name="t4_secondary">#FF3AA6A6</color>
+    <color name="t4_on_secondary">#FFFFFFFF</color>
+    <color name="t4_secondary_container">#FFD5F0F0</color>
+    <color name="t4_on_secondary_container">#FF08383A</color>
+    <color name="t4_surface">#FFFFFFFF</color>
+    <color name="t4_surface_variant">#FFEDF3FA</color>
+    <color name="t4_background">#FFF6FAFE</color>
+    <color name="t4_on_surface">#FF16232F</color>
+    <color name="t4_on_surface_variant">#FF5A6B7B</color>
+    <color name="t4_outline">#FFD7E3F0</color>
+    <color name="t4_status_bar">#FFF6FAFE</color>
+
+    <!-- ===================== 通用 ===================== -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="error">#FFD64545</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- 分类默认色 -->
+    <color name="category_work">#FF5B7FFF</color>
+    <color name="category_study">#FFFF9F43</color>
+    <color name="category_life">#FF26C6DA</color>
+    <color name="category_idea">#FFAB47BC</color>
+    <color name="category_uncategorized">#FF8F9BA8</color>
+
+    <!-- 编辑器纸张背景（浅色） -->
+    <color name="paper_default_light">#FFFFFFFF</color>
+    <color name="paper_white">#FFFFFFFF</color>
+    <color name="paper_cream">#FFFFF8E7</color>
+    <color name="paper_mint">#FFE9F5EC</color>
+
+    <!-- 编辑器纸张背景（深色） -->
+    <color name="paper_default_dark">#FF1B1A21</color>
+    <color name="paper_white_dark">#FF17161C</color>
+    <color name="paper_cream_dark">#FF2A2418</color>
+    <color name="paper_mint_dark">#FF16251F</color>
+
+</resources>

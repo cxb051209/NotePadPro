@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 默认主题：紫罗兰 -->
+    <style name="Theme.NotePad" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/t1_primary</item>
+        <item name="colorOnPrimary">@color/t1_on_primary</item>
+        <item name="colorPrimaryContainer">@color/t1_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/t1_on_primary_container</item>
+        <item name="colorSecondary">@color/t1_secondary</item>
+        <item name="colorOnSecondary">@color/t1_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/t1_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/t1_on_secondary_container</item>
+        <item name="colorSurface">@color/t1_surface</item>
+        <item name="colorSurfaceVariant">@color/t1_surface_variant</item>
+        <item name="colorOnSurface">@color/t1_on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/t1_on_surface_variant</item>
+        <item name="colorOutline">@color/t1_outline</item>
+        <item name="colorError">@color/error</item>
+        <item name="android:colorBackground">@color/t1_background</item>
+        <item name="android:textColorPrimary">@color/t1_on_surface</item>
+        <item name="android:textColorSecondary">@color/t1_on_surface_variant</item>
+        <item name="android:statusBarColor">@color/t1_status_bar</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@color/t1_background</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+
+    <!-- 暗夜 -->
+    <style name="Theme.NotePad.Dark" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/t2_primary</item>
+        <item name="colorOnPrimary">@color/t2_on_primary</item>
+        <item name="colorPrimaryContainer">@color/t2_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/t2_on_primary_container</item>
+        <item name="colorSecondary">@color/t2_secondary</item>
+        <item name="colorOnSecondary">@color/t2_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/t2_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/t2_on_secondary_container</item>
+        <item name="colorSurface">@color/t2_surface</item>
+        <item name="colorSurfaceVariant">@color/t2_surface_variant</item>
+        <item name="colorOnSurface">@color/t2_on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/t2_on_surface_variant</item>
+        <item name="colorOutline">@color/t2_outline</item>
+        <item name="colorError">@color/error</item>
+        <item name="android:colorBackground">@color/t2_background</item>
+        <item name="android:textColorPrimary">@color/t2_on_surface</item>
+        <item name="android:textColorSecondary">@color/t2_on_surface_variant</item>
+        <item name="android:statusBarColor">@color/t2_status_bar</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">@color/t2_background</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+
+    <!-- 护眼绿 -->
+    <style name="Theme.NotePad.Green" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/t3_primary</item>
+        <item name="colorOnPrimary">@color/t3_on_primary</item>
+        <item name="colorPrimaryContainer">@color/t3_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/t3_on_primary_container</item>
+        <item name="colorSecondary">@color/t3_secondary</item>
+        <item name="colorOnSecondary">@color/t3_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/t3_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/t3_on_secondary_container</item>
+        <item name="colorSurface">@color/t3_surface</item>
+        <item name="colorSurfaceVariant">@color/t3_surface_variant</item>
+        <item name="colorOnSurface">@color/t3_on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/t3_on_surface_variant</item>
+        <item name="colorOutline">@color/t3_outline</item>
+        <item name="colorError">@color/error</item>
+        <item name="android:colorBackground">@color/t3_background</item>
+        <item name="android:textColorPrimary">@color/t3_on_surface</item>
+        <item name="android:textColorSecondary">@color/t3_on_surface_variant</item>
+        <item name="android:statusBarColor">@color/t3_status_bar</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@color/t3_background</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+
+    <!-- 海盐蓝 -->
+    <style name="Theme.NotePad.Ocean" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/t4_primary</item>
+        <item name="colorOnPrimary">@color/t4_on_primary</item>
+        <item name="colorPrimaryContainer">@color/t4_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/t4_on_primary_container</item>
+        <item name="colorSecondary">@color/t4_secondary</item>
+        <item name="colorOnSecondary">@color/t4_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/t4_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/t4_on_secondary_container</item>
+        <item name="colorSurface">@color/t4_surface</item>
+        <item name="colorSurfaceVariant">@color/t4_surface_variant</item>
+        <item name="colorOnSurface">@color/t4_on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/t4_on_surface_variant</item>
+        <item name="colorOutline">@color/t4_outline</item>
+        <item name="colorError">@color/error</item>
+        <item name="android:colorBackground">@color/t4_background</item>
+        <item name="android:textColorPrimary">@color/t4_on_surface</item>
+        <item name="android:textColorSecondary">@color/t4_on_surface_variant</item>
+        <item name="android:statusBarColor">@color/t4_status_bar</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@color/t4_background</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+
+</resources>

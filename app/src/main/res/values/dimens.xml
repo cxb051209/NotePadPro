@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_margin">16dp</dimen>
+    <dimen name="card_radius">18dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+    <dimen name="item_spacing">6dp</dimen>
+    <dimen name="icon_small">16dp</dimen>
+    <dimen name="icon_normal">20dp</dimen>
+    <dimen name="icon_large">24dp</dimen>
+</resources>
