@@ -8,7 +8,7 @@
 
 | 笔记列表 | 偏好设置 |
 | --- | --- |
-| ![笔记列表](![Uploading image.png…]()) | ![偏好设置](screenshots/02_偏好设置.png) |
+| ![笔记列表](screenshots/01_笔记列表.png) | ![偏好设置](screenshots/02_偏好设置.png) |
 
 | 暗夜主题 | 云备份与恢复 | 覆盖恢复 |
 | --- | --- | --- |
@@ -205,7 +205,7 @@ public static String formatTimestamp(long time) {
 ```
 
 在 `NoteAdapter.onBindViewHolder` 中绑定到 `R.id.text_time`，时间取自 `note.modified`（修改时间更能反映"最近一次改动"）。
-<img width="663" height="605" alt="image" src="https://github.com/user-attachments/assets/c1c05ab3-d450-4b06-a48c-cf92921729b6" />
+<img width="571" height="796" alt="image" src="https://github.com/user-attachments/assets/961281a8-3552-4392-8132-303b9c883724" />
 
 ### 5.2 笔记查询（B2）
 
@@ -247,7 +247,7 @@ searchEdit.addTextChangedListener(new TextWatcher() {
     }
 });
 ```
-<img width="727" height="511" alt="image" src="https://github.com/user-attachments/assets/4b140394-6fa3-43b1-b0a6-5816dc92aa5a" />
+<img width="747" height="569" alt="image" src="https://github.com/user-attachments/assets/538dff87-f452-47ba-a2c9-e11bb99b04e1" />
 
 ### 5.3 UI 美化（A1）
 
@@ -261,7 +261,7 @@ holder.card.setCardBackgroundColor(
 2. **主题系统**：4 套主题样式 + `ThemeHelper` 统一套用，列表、编辑器、设置页全部跟随。
 3. **编辑器**：标题 24sp 加粗、正文 17sp、1.4 倍行距、背景跟随主题、实时字数统计、创建 / 更新时间展示、底部操作栏（分类 Chip）。
 4. **细节**：矢量图标（28 个）、圆角、统一间距、空洞页提示、长按菜单、置顶图钉标记。
-<img width="653" height="1312" alt="image" src="https://github.com/user-attachments/assets/898e146c-8e1f-42f6-ae61-428199e8fea4" />
+<img width="687" height="1302" alt="image" src="https://github.com/user-attachments/assets/cb18066b-ec6b-4b8b-b204-87043d6ce902" />
 <img width="597" height="270" alt="image" src="https://github.com/user-attachments/assets/8a09500f-2342-4fec-ab57-94d4e413dc2b" />
 
 ### 5.4 导出笔记与云备份恢复（A2）
@@ -302,9 +302,10 @@ exportLauncher.launch(ExportHelper.suggestedFileName(note.title) + ".txt");
 - 云备份页只保留两个核心动作：**立即备份**（打包当前全部笔记）与**覆盖恢复**（`deleteAll()` 后逐条 `insertRaw()` 写回），点击备份记录即可触发，另有删除该备份；
 - 恢复时会调用 `CategoryManager.ensureCategories()` 补齐备份中出现但本机不存在的分类；
 - 备份和恢复都在单线程池中执行，不阻塞 UI，完成后回主线程提示条数。
-<img width="648" height="488" alt="image" src="https://github.com/user-attachments/assets/8009d0d0-9624-486d-9f37-f78b78e12c97" />
-<img width="587" height="334" alt="image" src="https://github.com/user-attachments/assets/612a44c3-3ac1-42e3-a4f0-d2e70d95bbd2" />
-<img width="641" height="491" alt="image" src="https://github.com/user-attachments/assets/d4deb97f-10c2-41fc-9529-996fe8360f06" />
+<img width="684" height="574" alt="image" src="https://github.com/user-attachments/assets/9764772a-8b01-45d8-8c7a-11bacb24022d" />
+<img width="652" height="487" alt="image" src="https://github.com/user-attachments/assets/907c2d9a-6b7f-4642-8e19-a34bf98958f3" />
+<img width="695" height="564" alt="image" src="https://github.com/user-attachments/assets/b8bd1740-d69d-4557-b3a5-bf251f92458c" />
+<img width="601" height="845" alt="image" src="https://github.com/user-attachments/assets/036c1ee3-8bb2-42cf-977d-c7837509e2ef" />
 
 ### 5.5 偏好设置（A3）
 
@@ -338,7 +339,7 @@ if (!existing.name.equals(name)) {
 ```
 
 - 删除分类时提示"该分类下的 N 条笔记将移动到「未分类」"，并把笔记迁移过去；「未分类」不可删除，作为兜底分类。
-- <img width="196" height="90" alt="image" src="https://github.com/user-attachments/assets/2b06b202-4a7b-4750-9ab1-6e9d450936e1" />
+- <img width="590" height="815" alt="image" src="https://github.com/user-attachments/assets/829ed753-2a9b-45de-979e-8dc83aa39a56" />
 - <img width="742" height="709" alt="image" src="https://github.com/user-attachments/assets/1c0f73d9-abcb-42a1-9ee1-b23f6e16155e" />
 
 
