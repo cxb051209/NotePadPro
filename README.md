@@ -1,4 +1,4 @@
-<img width="196" height="90" alt="image" src="https://github.com/user-attachments/assets/f9ca794c-90eb-4c38-b597-7cc697e41707" /># NotePad 笔记（NotePadPro）— 移动软件开发期中实验
+# NotePad 笔记（NotePadPro）— 移动软件开发期中实验
 
 基于 Android 官方 `NotePad` 示例（[fjnu-cse/NotePad](https://github.com/fjnu-cse/NotePad)）的功能扩展实现。
 
