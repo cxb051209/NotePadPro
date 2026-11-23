@@ -44,6 +44,8 @@
 | 编号 | 需求 | 实现说明 |
 | --- | --- | --- |
 | B1 | 笔记条目显示时间戳 | 卡片底部显示「今天 14:32 / 昨天 09:05 / 11-05 / 2025-12-01」，见 `NoteAdapter` + `TimeUtils.formatTimestamp()` |
+<img width="663" height="605" alt="image" src="https://github.com/user-attachments/assets/c1c05ab3-d450-4b06-a48c-cf92921729b6" />
+
 | B2 | 笔记查询（按标题或内容） | 顶部搜索框，输入即查（220ms 防抖），SQL 使用 `title LIKE ? OR note LIKE ?`，可与分类筛选叠加，见 `NoteRepository.query()` |
 
 ### 3.2 附加功能（选择 4 项）
