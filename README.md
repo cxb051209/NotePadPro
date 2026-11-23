@@ -339,8 +339,9 @@ if (!existing.name.equals(name)) {
 ```
 
 - 删除分类时提示"该分类下的 N 条笔记将移动到「未分类」"，并把笔记迁移过去；「未分类」不可删除，作为兜底分类。
+- <img width="153" height="79" alt="image" src="https://github.com/user-attachments/assets/99ec79ae-ca4c-468f-a5bf-0a64f0c16f2a" />
 - <img width="590" height="815" alt="image" src="https://github.com/user-attachments/assets/829ed753-2a9b-45de-979e-8dc83aa39a56" />
-- <img width="742" height="709" alt="image" src="https://github.com/user-attachments/assets/1c0f73d9-abcb-42a1-9ee1-b23f6e16155e" />
+
 
 
 ### 5.7 自动保存与置顶（增强）
