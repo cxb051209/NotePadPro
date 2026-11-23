@@ -1,4 +1,4 @@
-# NotePad 笔记（NotePadPro）— 移动软件开发期中实验
+<img width="196" height="90" alt="image" src="https://github.com/user-attachments/assets/f9ca794c-90eb-4c38-b597-7cc697e41707" /># NotePad 笔记（NotePadPro）— 移动软件开发期中实验
 
 基于 Android 官方 `NotePad` 示例（[fjnu-cse/NotePad](https://github.com/fjnu-cse/NotePad)）的功能扩展实现。
 
@@ -44,8 +44,6 @@
 | 编号 | 需求 | 实现说明 |
 | --- | --- | --- |
 | B1 | 笔记条目显示时间戳 | 卡片底部显示「今天 14:32 / 昨天 09:05 / 11-05 / 2025-12-01」，见 `NoteAdapter` + `TimeUtils.formatTimestamp()` |
-<img width="663" height="605" alt="image" src="https://github.com/user-attachments/assets/c1c05ab3-d450-4b06-a48c-cf92921729b6" />
-
 | B2 | 笔记查询（按标题或内容） | 顶部搜索框，输入即查（220ms 防抖），SQL 使用 `title LIKE ? OR note LIKE ?`，可与分类筛选叠加，见 `NoteRepository.query()` |
 
 ### 3.2 附加功能（选择 4 项）
@@ -207,6 +205,7 @@ public static String formatTimestamp(long time) {
 ```
 
 在 `NoteAdapter.onBindViewHolder` 中绑定到 `R.id.text_time`，时间取自 `note.modified`（修改时间更能反映"最近一次改动"）。
+<img width="663" height="605" alt="image" src="https://github.com/user-attachments/assets/c1c05ab3-d450-4b06-a48c-cf92921729b6" />
 
 ### 5.2 笔记查询（B2）
 
@@ -248,6 +247,7 @@ searchEdit.addTextChangedListener(new TextWatcher() {
     }
 });
 ```
+<img width="727" height="511" alt="image" src="https://github.com/user-attachments/assets/4b140394-6fa3-43b1-b0a6-5816dc92aa5a" />
 
 ### 5.3 UI 美化（A1）
 
@@ -261,6 +261,8 @@ holder.card.setCardBackgroundColor(
 2. **主题系统**：4 套主题样式 + `ThemeHelper` 统一套用，列表、编辑器、设置页全部跟随。
 3. **编辑器**：标题 24sp 加粗、正文 17sp、1.4 倍行距、背景跟随主题、实时字数统计、创建 / 更新时间展示、底部操作栏（分类 Chip）。
 4. **细节**：矢量图标（28 个）、圆角、统一间距、空洞页提示、长按菜单、置顶图钉标记。
+<img width="653" height="1312" alt="image" src="https://github.com/user-attachments/assets/898e146c-8e1f-42f6-ae61-428199e8fea4" />
+<img width="597" height="270" alt="image" src="https://github.com/user-attachments/assets/8a09500f-2342-4fec-ab57-94d4e413dc2b" />
 
 ### 5.4 导出笔记与云备份恢复（A2）
 
@@ -278,6 +280,8 @@ exportLauncher = registerForActivityResult(
         });
 exportLauncher.launch(ExportHelper.suggestedFileName(note.title) + ".txt");
 ```
+<img width="671" height="1291" alt="image" src="https://github.com/user-attachments/assets/b2e5d360-8b4a-4eea-83ef-6cf6d24593db" />
+<img width="579" height="443" alt="image" src="https://github.com/user-attachments/assets/be88c308-b12f-40ab-bef3-0bd3256fd6be" />
 
 **备份** 将全部笔记打包为 JSON：
 
@@ -298,6 +302,9 @@ exportLauncher.launch(ExportHelper.suggestedFileName(note.title) + ".txt");
 - 云备份页只保留两个核心动作：**立即备份**（打包当前全部笔记）与**覆盖恢复**（`deleteAll()` 后逐条 `insertRaw()` 写回），点击备份记录即可触发，另有删除该备份；
 - 恢复时会调用 `CategoryManager.ensureCategories()` 补齐备份中出现但本机不存在的分类；
 - 备份和恢复都在单线程池中执行，不阻塞 UI，完成后回主线程提示条数。
+<img width="648" height="488" alt="image" src="https://github.com/user-attachments/assets/8009d0d0-9624-486d-9f37-f78b78e12c97" />
+<img width="587" height="334" alt="image" src="https://github.com/user-attachments/assets/612a44c3-3ac1-42e3-a4f0-d2e70d95bbd2" />
+<img width="641" height="491" alt="image" src="https://github.com/user-attachments/assets/d4deb97f-10c2-41fc-9529-996fe8360f06" />
 
 ### 5.5 偏好设置（A3）
 
@@ -308,6 +315,7 @@ exportLauncher.launch(ExportHelper.suggestedFileName(note.title) + ".txt");
 | 外观 | 主题配色（紫罗兰 / 暗夜 / 护眼绿 / 海盐蓝） | 保存后 `recreate()` 立即生效 |
 | 笔记列表 | 排序方式（最近修改 / 最近创建 / 按标题） | 返回列表即重新查询 |
 | 数据 | 云备份入口 / 清除全部笔记 / 恢复默认设置 / 关于 | 即时执行 |
+<img width="644" height="1082" alt="image" src="https://github.com/user-attachments/assets/a77525e8-b688-4ca5-a27f-b40acdc54db6" />
 
 ### 5.6 笔记分类（A4）
 
@@ -330,6 +338,9 @@ if (!existing.name.equals(name)) {
 ```
 
 - 删除分类时提示"该分类下的 N 条笔记将移动到「未分类」"，并把笔记迁移过去；「未分类」不可删除，作为兜底分类。
+- <img width="196" height="90" alt="image" src="https://github.com/user-attachments/assets/2b06b202-4a7b-4750-9ab1-6e9d450936e1" />
+- <img width="742" height="709" alt="image" src="https://github.com/user-attachments/assets/1c0f73d9-abcb-42a1-9ee1-b23f6e16155e" />
+
 
 ### 5.7 自动保存与置顶（增强）
 
